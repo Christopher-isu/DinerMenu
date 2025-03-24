@@ -22,7 +22,7 @@ Partial Class DinerMenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DinnerName = New System.Windows.Forms.Label()
         Me.DisplaySpecialLabel = New System.Windows.Forms.Label()
         Me.SoupButton = New System.Windows.Forms.Button()
         Me.SaladButton = New System.Windows.Forms.Button()
@@ -32,24 +32,25 @@ Partial Class DinerMenuForm
         Me.GroupMenu.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'DinnerName
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Brush Script MT", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(235, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(265, 28)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Diner At The Edge Of Space"
+        Me.DinnerName.AutoSize = True
+        Me.DinnerName.Font = New System.Drawing.Font("Brush Script MT", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DinnerName.Location = New System.Drawing.Point(235, 9)
+        Me.DinnerName.Name = "DinnerName"
+        Me.DinnerName.Size = New System.Drawing.Size(265, 28)
+        Me.DinnerName.TabIndex = 0
+        Me.DinnerName.Text = "Diner At The Edge Of Space"
         '
         'DisplaySpecialLabel
         '
         Me.DisplaySpecialLabel.AutoSize = True
-        Me.DisplaySpecialLabel.Location = New System.Drawing.Point(19, 32)
+        Me.DisplaySpecialLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DisplaySpecialLabel.Location = New System.Drawing.Point(83, 65)
         Me.DisplaySpecialLabel.Name = "DisplaySpecialLabel"
-        Me.DisplaySpecialLabel.Size = New System.Drawing.Size(13, 16)
+        Me.DisplaySpecialLabel.Size = New System.Drawing.Size(67, 29)
         Me.DisplaySpecialLabel.TabIndex = 1
-        Me.DisplaySpecialLabel.Text = "  "
+        Me.DisplaySpecialLabel.Text = "         "
         '
         'SoupButton
         '
@@ -89,6 +90,9 @@ Partial Class DinerMenuForm
         '
         'GroupMenu
         '
+        Me.GroupMenu.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupMenu.Controls.Add(Me.DisplaySpecialLabel)
         Me.GroupMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupMenu.Location = New System.Drawing.Point(39, 50)
@@ -108,7 +112,7 @@ Partial Class DinerMenuForm
         Me.Controls.Add(Me.FishButton)
         Me.Controls.Add(Me.SaladButton)
         Me.Controls.Add(Me.SoupButton)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.DinnerName)
         Me.Name = "DinerMenuForm"
         Me.Text = "Menu"
         Me.GroupMenu.ResumeLayout(False)
@@ -118,7 +122,7 @@ Partial Class DinerMenuForm
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents DinnerName As Label
     Friend WithEvents DisplaySpecialLabel As Label
     Friend WithEvents SoupButton As Button
     Friend WithEvents SaladButton As Button
