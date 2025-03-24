@@ -22,7 +22,7 @@ Partial Class DinerMenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DinnerName = New System.Windows.Forms.Label()
+        Me.DinerNameLabel = New System.Windows.Forms.Label()
         Me.DisplaySpecialLabel = New System.Windows.Forms.Label()
         Me.SoupButton = New System.Windows.Forms.Button()
         Me.SaladButton = New System.Windows.Forms.Button()
@@ -32,15 +32,15 @@ Partial Class DinerMenuForm
         Me.GroupMenu.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DinnerName
+        'DinerNameLabel
         '
-        Me.DinnerName.AutoSize = True
-        Me.DinnerName.Font = New System.Drawing.Font("Brush Script MT", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DinnerName.Location = New System.Drawing.Point(235, 9)
-        Me.DinnerName.Name = "DinnerName"
-        Me.DinnerName.Size = New System.Drawing.Size(265, 28)
-        Me.DinnerName.TabIndex = 0
-        Me.DinnerName.Text = "Diner At The Edge Of Space"
+        Me.DinerNameLabel.AutoSize = True
+        Me.DinerNameLabel.Font = New System.Drawing.Font("Brush Script MT", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DinerNameLabel.Location = New System.Drawing.Point(235, 9)
+        Me.DinerNameLabel.Name = "DinerNameLabel"
+        Me.DinerNameLabel.Size = New System.Drawing.Size(265, 28)
+        Me.DinerNameLabel.TabIndex = 0
+        Me.DinerNameLabel.Text = "Diner At The Edge Of Space"
         '
         'DisplaySpecialLabel
         '
@@ -112,7 +112,7 @@ Partial Class DinerMenuForm
         Me.Controls.Add(Me.FishButton)
         Me.Controls.Add(Me.SaladButton)
         Me.Controls.Add(Me.SoupButton)
-        Me.Controls.Add(Me.DinnerName)
+        Me.Controls.Add(Me.DinerNameLabel)
         Me.Name = "DinerMenuForm"
         Me.Text = "Menu"
         Me.GroupMenu.ResumeLayout(False)
@@ -122,7 +122,7 @@ Partial Class DinerMenuForm
 
     End Sub
 
-    Friend WithEvents DinnerName As Label
+    Friend WithEvents DinerNameLabel As Label
     Friend WithEvents DisplaySpecialLabel As Label
     Friend WithEvents SoupButton As Button
     Friend WithEvents SaladButton As Button
